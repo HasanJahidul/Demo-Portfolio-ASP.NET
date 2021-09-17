@@ -1,0 +1,518 @@
+﻿/**
+ * skillbars - (_skillbars.scss)
+ * -------------------------------------------------------------------
+ */
+.intro-info img {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    margin: 0.9rem 0 0 0;
+    float: left;
+}
+
+.skill-bars {
+    list-style: none;
+    margin: 6rem 0 3rem;
+}
+
+    .skill-bars li {
+        height: 0.6rem;
+        background: #a1a1a1;
+        width: 100%;
+        margin-bottom: 6rem;
+        padding: 0;
+        position: relative;
+    }
+
+        .skill-bars li strong {
+            position: absolute;
+            left: 0;
+            top: -3rem;
+            font-family: "poppins-bold", sans-serif;
+            color: #313131;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            font-size: 1.5rem;
+            line-height: 2.4rem;
+        }
+
+        .skill-bars li .progress {
+            background: #313131;
+            position: relative;
+            height: 100%;
+        }
+
+            .skill-bars li .progress span {
+                position: absolute;
+                right: 0;
+                top: -3.6rem;
+                display: block;
+                font-family: "poppins-regular", sans-serif;
+                color: white;
+                font-size: 1.1rem;
+                line-height: 1;
+                background: #313131;
+                padding: 0.6rem 0.6rem;
+                border-radius: 3px;
+            }
+
+                .skill-bars li .progress span::after {
+                    position: absolute;
+                    left: 50%;
+                    bottom: -5px;
+                    margin-left: -5px;
+                    border-right: 5px solid transparent;
+                    border-left: 5px solid transparent;
+                    border-top: 5px solid #313131;
+                    content: "";
+                }
+
+        .skill-bars li .percent5 {
+            width: 5%;
+        }
+
+        .skill-bars li .percent10 {
+            width: 10%;
+        }
+
+        .skill-bars li .percent15 {
+            width: 15%;
+        }
+
+        .skill-bars li .percent20 {
+            width: 20%;
+        }
+
+        .skill-bars li .percent25 {
+            width: 25%;
+        }
+
+        .skill-bars li .percent30 {
+            width: 30%;
+        }
+
+        .skill-bars li .percent35 {
+            width: 35%;
+        }
+
+        .skill-bars li .percent40 {
+            width: 40%;
+        }
+
+        .skill-bars li .percent45 {
+            width: 45%;
+        }
+
+        .skill-bars li .percent50 {
+            width: 50%;
+        }
+
+        .skill-bars li .percent55 {
+            width: 55%;
+        }
+
+        .skill-bars li .percent60 {
+            width: 60%;
+        }
+
+        .skill-bars li .percent65 {
+            width: 65%;
+        }
+
+        .skill-bars li .percent70 {
+            width: 70%;
+        }
+
+        .skill-bars li .percent75 {
+            width: 75%;
+        }
+
+        .skill-bars li .percent80 {
+            width: 80%;
+        }
+
+        .skill-bars li .percent85 {
+            width: 85%;
+        }
+
+        .skill-bars li .percent90 {
+            width: 90%;
+        }
+
+        .skill-bars li .percent95 {
+            width: 95%;
+        }
+
+        .skill-bars li .percent100 {
+            width: 100%;
+        }
+
+.about-content h3 {
+    text-align: left;
+}
+
+.about-content .info-list,
+.about-content .skill-bars {
+    margin-bottom: 4.2rem;
+}
+
+.about-content .skill-bars {
+    margin-top: 6rem;
+}
+/* Dropdown Button */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.cv li.drop {
+    position: relative;
+}
+
+.cv li {
+    display: block;
+}
+
+.dropOut .triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgb(179, 178, 178);
+    top: 0px;
+    left: 50%;
+    margin-left: -8px;
+}
+
+.dropdownContain {
+    width: 250px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    margin-left: -145px; /* half of width */
+    top: -auto;
+}
+
+.dropOut {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 250px;
+    background: white;
+    float: left;
+    opacity: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+    .dropOut ul {
+        float: left;
+        padding: 10px 0;
+    }
+
+        .dropOut ul li {
+            width: 120px;
+            padding: 12px 0 10px 15px;
+            margin: 0px 10px;
+            color: #777;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            -webkit-transition: background 0.1s ease-out;
+            -moz-transition: background 0.1s ease-out;
+            -ms-transition: background 0.1s ease-out;
+            -o-transition: background 0.1s ease-out;
+            transition: background 0.1s ease-out;
+        }
+
+            .dropOut ul li:hover {
+                background: #ff0077;
+            }
+
+ul li:hover a {
+    color: rgb(0, 0, 0);
+}
+
+ul li:hover .dropdownContain {
+    top: 60px;
+}
+
+ul li:hover .underline {
+    border-bottom-color: #777;
+}
+
+ul li:hover .dropOut {
+    opacity: 1;
+    margin-top: 8px;
+}
+.button.button-primary,
+a.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+    background: #313131;
+    color: #ffffff;
+}
+
+input[type="button"].button-primary {
+    background: #313131;
+    color: #ffffff;
+}
+
+    .button.button-primary:hover,
+    a.button.button-primary:hover,
+    button.button-primary:hover,
+    input[type="submit"].button-primary:hover,
+    input[type="reset"].button-primary:hover,
+    input[type="button"].button-primary:hover,
+    .button.button-primary:focus,
+    button.button-primary:focus,
+    input[type="submit"].button-primary:focus,
+    input[type="reset"].button-primary:focus,
+    input[type="button"].button-primary:focus {
+        background: #1f1f1f;
+    }
+button.large,
+.button.large {
+    height: 6rem !important;
+    line-height: 6rem !important;
+    padding: 0rem 3rem !important;
+}
+.button,
+a.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+    font-family: "poppins-bold", sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    height: 5.4rem;
+    line-height: 5.4rem;
+    padding: 0 3rem;
+    margin: 0 0.3rem 1.2rem 0;
+    background: #d8d8d8;
+    color: #313131;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+    .button:hover,
+    a.button:hover,
+    button:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover,
+    .button:focus,
+    button:focus,
+    input[type="submit"]:focus,
+    input[type="reset"]:focus,
+    input[type="button"]:focus {
+        background: #bebebe;
+        color: #ff0077;
+        outline: 0;
+    }
+/** 
+ * ===================================================================
+ * 10. intro - (_layout.scss) 
+ *
+ * ------------------------------------------------------------------- 
+ */
+#intro {
+    background: #151515 url(https://raw.githubusercontent.com/HasanJahidul/JoyDev/main/images/intro-bg.jpg) no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 720px;
+    display: table;
+    position: relative;
+    text-align: center;
+}
+
+.intro-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    opacity: 0.85;
+}
+
+.intro-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-transform: translateY(-2.1rem);
+    -ms-transform: translateY(-2.1rem);
+    transform: translateY(-2.1rem);
+}
+
+    .intro-content h1 {
+        color: #ffffff;
+        font-family: "poppins-medium", sans-serif;
+        font-size: 8.4rem;
+        line-height: 1.071;
+        max-width: 900px;
+        margin-top: 0;
+        margin-bottom: 0.6rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .intro-content h5 {
+        color: #cc005f;
+        font-family: "poppins-bold", sans-serif;
+        font-size: 2.3rem;
+        line-height: 1.565;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .intro-content .intro-position {
+        font-family: "lora-regular", serif;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        color: #ffffff;
+        text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+
+        .intro-content .intro-position span {
+            display: inline-block;
+        }
+
+            .intro-content .intro-position span::after {
+                content: "|";
+                text-align: center;
+                display: inline-block;
+                padding: 0 8px 0 14px;
+                color: rgba(255, 255, 255, 0.3);
+            }
+
+            .intro-content .intro-position span:first-child::before {
+                content: "|";
+                text-align: center;
+                display: inline-block;
+                padding: 0 14px 0 8px;
+                color: rgba(255, 255, 255, 0.3);
+            }
+
+    .intro-content .button {
+        color: #ffffff !important;
+        border-color: rgba(255, 255, 255, 0.3);
+        height: 6rem !important;
+        line-height: 5.4rem !important;
+        padding: 0 3.5rem 0 3rem !important;
+        margin-top: 0.6rem;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.25rem;
+    }
+
+        .intro-content .button:hover,
+        .intro-content .button:focus {
+            border-color: #cc005f;
+        }
+
+        .intro-content .button::after {
+            display: inline-block;
+            content: "\f107";
+            font-family: fontAwesome;
+            font-size: 1.6rem;
+            line-height: inherit;
+            text-align: center;
+            position: relative;
+            left: 1.2rem;
+        }
+
+.intro-social {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 7.2rem;
+    font-size: 3.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+    .intro-social li {
+        display: inline-block;
+        margin: 0 20px;
+        padding: 0;
+    }
+
+        .intro-social li a,
+        .intro-social li a:visited {
+            color: #ffffff;
+        }
+
+            .intro-social li a:hover,
+            .intro-social li a:focus {
+                color: #cc005f;
+            }
